@@ -1,0 +1,9 @@
+- hosts: "{{ host }}"
+  gather_facts: false
+
+  tasks:
+  - name: update system
+    yum:
+      name: '*'
+      state: latest
+
